@@ -33,8 +33,8 @@
     <![endif]-->
   </head>
 
-  <body>
-    
+  <body data-spy="scroll" data-target=".navbar-collapse">
+    <div id="trollpart">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -44,11 +44,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Breandan's Website</a>
+            <a class="navbar-brand" href="#jumbotron">Breandan's Website</a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home</a></li>
+              <li><a href="#jumbotron">Home</a></li>
               <li><a href="#who">Who Am I</a></li>
               <li><a href="#aboutme">About Me</a></li>
             </ul>
@@ -58,14 +58,38 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
 
-      <div class="jumbotron">
+      <div id="jumbotron" class="jumbotron">
         <div class="container">
           <h1>Hello, Hong Kong!</h1>
-          <p>Welcome to my first website! It's awesome I promise...<i class="fa fa-smile-o"></i></p>
-          <p id="learnmore"><button onclick="alert('What Did I Just Say?!')">Just go on...do not click on this &raquo;</button></p>
+          <p id="white">Welcome to my first website! It's awesome I promise...<i class="fa fa-smile-o"></i></p>
+          <p id="learnmore"><button id="troll">Just go on...do not click on this &raquo;</button></p>
+
+          <!--begin mailchimp sign up form -->
+
+          <div id="mc_embed_signup" class="row">
+          <div class="col-sm-9">
+            <form action="//github.us11.list-manage.com/subscribe/post?u=b376e0cdc57df62ebacce2901&amp;id=4f3a73e3ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" role="form" novalidate>
+              
+            <div class="mc-field-group form-group">
+              <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_636e49cc7c70ceee939312b50_fe7a597b01" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Join The Fun" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-lg"></div>
+          </div>
+          </form>
         </div>
 
+  <!--End mc_embed_signup-->
       </div>
+    </div>
+          
+ 
 
       <div id="who">
         <div class="container homepage">
@@ -89,7 +113,7 @@
               <p class="lead">CONCERT MASTER</p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/ubSt3yZ4jec" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ubSt3yZ4jec?showinfo=0" frameborder="0" allowfullscreen></iframe> <!--?showinfo=0 makes the youtube link not show the title when playing -->
             </div>
 
             <!--third feat -->
@@ -111,7 +135,7 @@
           <h2>About Me</h2>
           <hr>
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4"> <!--col has to be row's absolute children !-->
               <span class="fa-stack fa-4x">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
@@ -120,8 +144,34 @@
               <h3>Education</h3>
               <p>Graduated from North Toronto C.I. Currently studying 
               Computer Science at the University of Waterloo. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
+              <p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
+              <!-- place modal from boostrap data-toggle="modal" data-target="#myModal" after the classes 
+
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              !-->
+
+
+              
+
+
+              
+            </div> 
 
             <div class="col-md-4">
               <span class="fa-stack fa-4x">
@@ -130,7 +180,7 @@
               </span>
 
               <h3>About me</h3>
-              <p>I like to hang out with friends and play League of Legends.  </p>
+              <p>I like to hang out with friends and play League of Legends...and make awesome websites of course!  </p>
               <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
            </div>
 
@@ -157,26 +207,37 @@
         </div> <!-- /container -->
       </div>
 
-      <img src="images/footer.jpg" />
       <footer>
-          <div class="footcolor">
-            <a href="#">Back to top</a>
-          </div>
+          <img src="images/footer.jpg" />
       </footer>
+  </div>
+
+      <script type="text/javascript">
+
+      var arrayString=["Why couldn't you follow instructions?!", "HUH?!", "Is this what you want?", "regretting now?", "Good", "Now refresh the page and start all over...", "Dont mess up again😠"];
+
+        document.getElementById("troll").onclick=function() {
+
+          document.getElementById("trollpart").innerHTML="GREAT! LOOK AT WHAT YOU'VE DONE! 😠";
+
+          for (var i=0; i<arrayString.length; i++) {
+            alert(arrayString[i]);
+          }
 
 
+
+        }
+
+      </script>
+
+      <div id="back-to-top">
+
+          <a href="#jumbotron"><i class="fa fa-3x fa-chevron-circle-up"></i></a>
+
+      </div>
 
 
   </body>
-
-
-
-    
-
-
-
-    
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -185,5 +246,6 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/smoothscroll.js"></script>
   </body>
 </html>
