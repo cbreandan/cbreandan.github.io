@@ -5,24 +5,8 @@ body {
   
 }
 
-.space{
-
-  /* Pass a comma separated list of backgrounds: */
-  background:url('http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket_big.png') no-repeat center 1000px, url('http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/space.jpg') no-repeat bottom center;
-  background-size:;
-  width:200px;
-  height:200px;
-  margin: 0 auto;
-
-  border-radius:3px;
-
-  /* Animate the positions of both of the backgrounds */
-  transition:background-position 1s;
-}
-
-.space:hover{
-  /* The same goes for properties like background-position and repeat */
-  background-position:top, top center;
+#navbar a:hover {
+	color:#56D58C;
 }
 
 #white {
@@ -30,9 +14,10 @@ body {
 }
 
 #learnmore {
-	padding-top:200px;
+	padding-top:300px;
 	color:black;
 }
+
 
 #mc_embed_signup {
 	padding-top:250px;
@@ -101,6 +86,11 @@ button:hover {
 	color:#333;
 }
 
+
+#subscribe h2 {
+	padding-top:100px;
+}
+
 .navbar-brand {
 	font-family:'Lato', 'Arvo', serif;
 	font-size:1.9em;
@@ -125,10 +115,15 @@ button:hover {
 
 .jumbotron {
 	text-align:center;
-	background-image: url('../images/Hongkong.jpg');
+	background-image: url('../images/wallpaper.jpg');
 	/*background-attachment:fixed; */
+	background-size: 100%;
+  	background-repeat: no-repeat;
+  	background-position-y: -250px;
 	padding:60px;
 	margin:0;
+
+
 
 }
 

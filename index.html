@@ -33,6 +33,10 @@
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <!--Flickity -->
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <script src="js/flickity.pkgd.min.js"></script>
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -81,40 +85,58 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
 
       <div id="jumbotron" class="jumbotron">
+
+
         <div class="container">
           <h1>Hello, Hong Kong!</h1>
-           <div class="space"></div>
-
 
           <p id="white">Welcome to my first website! It's awesome I promise...<i class="fa fa-smile-o"></i></p>
           <p id="learnmore"><button id="troll">Just go on...do not click on this &raquo;</button></p>
 
-          <h2 id="white">Make the right choice and subscribe to this website!</h2>
+        </div>
+
+        <div class="container" id="subscribe">
+
+
+          	<h2>Subscribe to get notifications for updates!</h2>
 
           <!--begin mailchimp sign up form -->
 
-          <div id="mc_embed_signup" class="row">
-          <div class="col-sm-9">
-            <form action="//github.us11.list-manage.com/subscribe/post?u=b376e0cdc57df62ebacce2901&amp;id=4f3a73e3ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" role="form" novalidate>
+          	<div id="mc_embed_signup" class="row">
+          	<div class="col-sm-9">
+            	<form action="//github.us11.list-manage.com/subscribe/post?u=b376e0cdc57df62ebacce2901&amp;id=4f3a73e3ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" role="form" novalidate>
               
             <div class="mc-field-group form-group">
-              <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter email">
+              	<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter email">
             </div>
-          </div>
-          <div class="col-sm-3">
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_636e49cc7c70ceee939312b50_fe7a597b01" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Join The Fun" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-lg"></div>
-          </div>
-          </form>
+          	</div>
+	      	<div class="col-sm-3">
+	        	<div id="mce-responses" class="clear">
+	          	<div class="response" id="mce-error-response" style="display:none"></div>
+	          	<div class="response" id="mce-success-response" style="display:none"></div>
+	        	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	        <div style="position: absolute; left: -5000px;"><input type="text" name="b_636e49cc7c70ceee939312b50_fe7a597b01" tabindex="-1" value=""></div>
+	        <div class="clear"><input type="submit" value="Join The Fun" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-lg"></div>
+	      	</div>
+          	</form>
         </div>
+
 
   <!--End mc_embed_signup-->
       </div>
     </div>
+
+  	<div id="slide" class="gallery js-flickity">
+  			<div class="gallery-cell"><img src="images/2.jpg" width="1300" height="450"/></div>
+  			<div class="gallery-cell"><img src="images/Hongkong.jpg" width="940" height="450"/></div>
+  			<div class="gallery-cell"><img src="images/1.jpg" width="940" height="450"/></div>
+  			<div class="gallery-cell"><img src="images/peak.jpg" width="940" height="450"/></div>
+  			<div class="gallery-cell"><img src="images/street.jpg" width="940" height="450"/></div>
+  			<div class="gallery-cell"><img src="images/street2.jpg" width="940" height="450"/></div>
+  			<div class="gallery-cell"><img src="images/op.jpg" width="940" height="450"/></div>
+
+  	</div>
+
           
  
 
@@ -145,12 +167,13 @@
 
             <!--third feat -->
             <hr>
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Water!Water!Water! - <span class="text-muted">Loo!Loo!Loo!</span></h2>
-              <p class="lead">Failed my first term, but that's okay</p>
+
+            <h2 class="featurette-heading">Waterloo- <span class="text-muted">Ideas Start Here</span></h2>
+            <div class="col-md-3">
+              <p class="lead">It Is Our <b>Home</b><br>It Is Our <b>Future</b><br>And It All Started..<br><i>With An <b>Idea</b>.</i></p>
             </div>
-            <div class="col-md-5 loo">
-              <img src="images/waterloo.jpg">
+            <div class="col-md-9 loo">
+              <iframe width="600" height="400" src="https://www.youtube.com/embed/DGpvOKwuk3U?controls=0&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -172,27 +195,7 @@
               <p>Graduated from North Toronto C.I. Currently studying 
               Computer Science at the University of Waterloo. </p>
               <p><a class="btn btn-default" role="button" data-toggle="modal" data-target="#myModal">View details &raquo;</a></p>
-              <!-- place modal from boostrap data-toggle="modal" data-target="#myModal" after the classes 
-
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-              !-->
-
+              
             </div> 
 
             <div class="col-md-4">
@@ -214,29 +217,21 @@
               
               <h3>Qualifications</h3>
 
-              <ul>
-                <li>Violin & Piano</li>
-                <li>Java</li>
-                <li>Dr.Racket</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-              </ul>
+              <p>HTML5 & CSS3<br>Javascript<br>Dr.Racket<br>SQL<br>Bootstrap<br>Violin<br>Piano
+              </p>
 
               <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 
             </div>
           </div>
+        </div>
+        </div>
 
-          <div class="slider">
-            <img src="images/league.png" />
-            <img src="images/waterloo.jpg" style="height:754px;"/>
-            <div class="just_text">This one's just text.</div>
-            <div id="desmond"><img src="images/desmond.png" style="size:cover;" /></div>
-            <img src="images/dad.png" style="height:764px;" />
-          </div>
+       
+  		</div>
+  		</div>
 
-        </div> <!-- /container -->
-      </div>
+
 
       <!-- I got these buttons from simplesharebuttons.com -->
       <div id="share-buttons">
