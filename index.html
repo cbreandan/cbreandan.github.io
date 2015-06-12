@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,6 +25,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -87,10 +87,13 @@
       <div id="jumbotron" class="jumbotron">
 
 
-        <div class="container">
-          <h1>Hello, Hong Kong!</h1>
 
-          <p id="white">Welcome to my first website! It's awesome I promise...<i class="fa fa-smile-o"></i></p>
+
+        <div class="container" id="headerfont">
+
+          <h1 id="blue">Welcome!</h1>
+
+          <p id="blue">Hong Kong Skyline<i class="fa fa-smile-o"></i></p>
           <p id="learnmore"><button id="troll">Just go on...do not click on this &raquo;</button></p>
 
         </div>
@@ -137,6 +140,13 @@
 
   	</div>
 
+  	<div id="timelapse">
+
+  		<h2>Watch this beautiful time lapse video of Hong Kong</h2>
+  		<iframe width="770" height="570" src="https://www.youtube.com/embed/-7rw3p9Crd0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+  	</div>
+
           
  
 
@@ -148,7 +158,7 @@
             
             <!--first feat -->
             <div class="col-md-7">
-              <h2 class="featurette-heading">GOLD V - <span class="text-muted">Oh yes, I'm Gold.</span></h2>
+              <h2 class="featurette-heading">GOLD V - <span class="text-muted">Oh yes.</span></h2>
               <p class="lead">I've been playing League of legends since 2012. My best roles are Mid and Adc and my main champion is Graves.</p>
             </div>
             <div class="col-md-5">
@@ -158,8 +168,13 @@
             <!--second feat -->
             <hr>
             <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">CONCERT MASTER</p>
+              <h2 class="featurette-heading">Bach solo. <span class="text-muted">Ignore the intonation</span></h2>
+              <p class="lead">Click Here To See More Videos:
+              	<br><a href="https://www.youtube.com/watch?v=-sg0w9nHKds">Violin Solo 2007</a>
+
+
+              </p>
+
             </div>
             <div class="col-md-5 col-md-pull-7">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/ubSt3yZ4jec?showinfo=0" frameborder="0" allowfullscreen></iframe> <!--?showinfo=0 makes the youtube link not show the title when playing -->
@@ -169,11 +184,15 @@
             <hr>
 
             <h2 class="featurette-heading">Waterloo- <span class="text-muted">Ideas Start Here</span></h2>
+
+            <p class="lead">It Is Our <b>Home</b><br>It Is Our <b>Future</b><br>And It All Started..<br><i>With An <b>Idea</b>.</i></p>
             <div class="col-md-3">
-              <p class="lead">It Is Our <b>Home</b><br>It Is Our <b>Future</b><br>And It All Started..<br><i>With An <b>Idea</b>.</i></p>
+
+            	<p class="padding">I'm a first year student studying computer science at the University of Waterloo</p>
+              
             </div>
             <div class="col-md-9 loo">
-              <iframe width="600" height="400" src="https://www.youtube.com/embed/DGpvOKwuk3U?controls=0&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+              <iframe width="600" height="400" src="https://www.youtube.com/embed/DGpvOKwuk3U?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -205,7 +224,7 @@
               </span>
 
               <h3>About me</h3>
-              <p>I like to hang out with friends and play League of Legends...and make awesome websites of course!  </p>
+              <p>I like to hanging out with friends. I enjoy all kinds of exercises: Muaythai/Kick boxing, Swimming, Gym, League of Legends...if that counts. And making awesome websites, of course!  </p>
               <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
            </div>
 
@@ -232,7 +251,6 @@
   		</div>
 
 
-
       <!-- I got these buttons from simplesharebuttons.com -->
       <div id="share-buttons">
       <p><u>Share</u>:</p>
@@ -257,7 +275,7 @@
 
       <script type="text/javascript">
 
-      var arrayString=["Why couldn't you follow instructions?!", "HUH?!", "Is this what you want?", "regretting now?", "Good", "Now refresh the page and start all over...", "Dont mess up again😠"];
+      var arrayString=["Was it really that hard to follow instructions?", "Now refresh the page and start all over...", "Dont mess up again😠"];
 
         document.getElementById("troll").onclick=function() {
 

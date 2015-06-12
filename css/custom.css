@@ -13,6 +13,10 @@ body {
 	color:white;
 }
 
+#blue {
+	color:#34495e;
+}
+
 #learnmore {
 	padding-top:300px;
 	color:black;
@@ -91,6 +95,22 @@ button:hover {
 	padding-top:100px;
 }
 
+#timelapse {
+	padding: 80px;
+	text-align: center;
+	background-color: #F1F1F1;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+#timelapse iframe {
+	padding-top:40px;
+}
+
+#headerfont {
+	font-family: 'Audiowide', cursive;
+}
+
 .navbar-brand {
 	font-family:'Lato', 'Arvo', serif;
 	font-size:1.9em;
@@ -122,7 +142,6 @@ button:hover {
   	background-position-y: -250px;
 	padding:60px;
 	margin:0;
-
 
 
 }
@@ -202,6 +221,10 @@ footer img {
 	height:250px;
 }
 
+
+.padding {
+	padding-top:120px;
+}
 
 
 
