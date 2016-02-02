@@ -1,2 +1,3 @@
-# cbreandan.github.io
-My first personal website on github
+http://cbreandan.github.io/
+
+-Summer 2015
