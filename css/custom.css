@@ -59,7 +59,7 @@ button:hover {
 	padding:50px;
 }
 
-#who {
+# {
 	padding-top:10px;
 	padding-bottom:50px;
 	background-color:#ECE6DB;
@@ -224,6 +224,14 @@ footer img {
 
 .padding {
 	padding-top:120px;
+}
+
+.nopadding {
+	padding-bottom:0px;
+}
+
+.font20{
+	font-size:20px;
 }
 
 
