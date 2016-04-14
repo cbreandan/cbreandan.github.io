@@ -77,8 +77,8 @@
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#jumbotron">Home</a></li>
-              <li><a href="#who">Cool Things</a></li>
               <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#who">Cool Things</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -93,15 +93,15 @@
 
           <h1 id="blue">Welcome!</h1>
 
-          <p id="blue">Hong Kong Skyline<i class="fa fa-smile-o"></i></p>
-          <p id="learnmore" style="padding-top: 300px;"><button id="troll">Just go on...do not click on this &raquo;</button></p>
+          <p id="blue">I'm from Hong Kong! <i class="fa fa-smile-o"></i></p>
 
         </div>
 
         <div class="container" id="subscribe">
 
+          	<h2 style="margin-top: 350px;">Subscribe 'cause why not!</h2>
 
-          	<h2 style="padding: 150px;">Subscribe 'cause why not!</h2>
+            <p style="padding: 30px;"><button id="troll">Just go on...do not click! &raquo;</button></p>
 
           <!--begin mailchimp sign up form -->
 
@@ -129,28 +129,37 @@
       </div>
     </div>
 
-  	<div id="slide" class="gallery js-flickity">
+  	<div id="slide" class="gallery js-flickity" style="background: #eee">
   			<div class="gallery-cell"><img src="images/2.jpg" width="1300" height="450"/></div>
   			<div class="gallery-cell"><img src="images/Hongkong.jpg" width="940" height="450"/></div>
   			<div class="gallery-cell"><img src="images/hongkong1.jpg" width="740" height="450"/></div>
   			<div class="gallery-cell"><img src="images/street2.jpg" width="740" height="450"/></div>
-  			<div class="gallery-cell"><img src="images/op.jpg" width="940" height="450"/></div>
+  			<div class="gallery-cell"><img src="images/hk-disney.jpg" width="940" height="450"/></div>
 
   	</div>
 
   	<div id="timelapse" style="padding: 0px;">
-
-  		<h2 style="padding:20px;">Watch this beautiful time lapse video of Hong Kong</h2>
-
       <div>
-    		<iframe style="width:100%; height:700px" src="https://www.youtube.com/embed/qVaisvKbBQw?&rel=0&autoplay=1&controls=0&showinfo=0&yt:quality=high" frameborder="0" allowfullscreen></iframe>
+    		<iframe id="player" style="width:100%; height:700px; padding:0px" src="https://www.youtube.com/embed/qVaisvKbBQw?&rel=0&autoplay=1&controls=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
       </div>
-
-
   	</div>
 
-          
- 
+    <div id="aboutme" style="font-size:16px">
+      <div class="container">
+        <div class="row">
+            <img style="float:right" class="circular" src="images/face.jpg"/>
+            <p style="font-size:21px; color:grey">Hi there,</p>
+            <p>My name is Breandan and I'm a 2A computer science student at the University of Waterloo. <br>I was born in Hong Kong (was that not obvious enough?!). I enjoy all kinds of sports, both outdoors and indoors.</p>
+
+            <p style="font-size:21px; color:grey">Interests?</p>
+            <p>I'm passionate about programming and data analytics. I consider myself as a lifetime student and am continuouly learning new things in my spare time. I like to help businesses find insights by applying technical knowledge in huge sets of data. I also like working with smart people and innovative ideas excites me. ʕ•ᴥ•ʔ</p> 
+
+            <i class="fa fa-code fa-stack fa-2x" aria-hidden="true"></i>
+            <p><u>Web Technologies:</u><br>HTML, CSS, Bootstrap framework<br><br><u>Languages / Development:</u><br>C, JavaScript, Node.js<br><br><u>SaaS tools / APIs:</u><br>SalesforceIQ, HubSpot, Stripe<br><br><u>Others:</u><br>postgreSQL<br>
+            </p>
+        </div>
+      </div>
+    </div>
 
       <div id="who">
         <div class="container homepage">
@@ -195,48 +204,7 @@
         </div>
       </div>
 
-        <div id="aboutme" >
-        <div class="container homepage">
-          <h2 style="color:cadetblue;">About Me</h2>
-          <hr>
-          <div class="row">
-            <div class="col-md-4"> <!--col has to be row's absolute children !-->
-              <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-              </span>
-
-              <h3>Education</h3>
-              <p>Graduated from North Toronto C.I. Currently studying 
-              Computer Science at University of Waterloo.<br>ʕ•ᴥ•ʔ</p>
-              
-            </div> 
-
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-user fa-stack-1x fa-inverse"></i>
-              </span>
-
-              <h3>About me</h3>
-              <p>I enjoy Boxing, Swimming, Gaming, and Programming! I like working with smart people and innovative ideas excites me. I also enjoy creating good user interfaces and experiences in my projects.<br>( ͡° ͜ʖ ͡°)</p>
-           </div>
-
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-money fa-stack-1x fa-inverse"></i>
-              </span>
-              
-              <h3>Technical Skills</h3>
-
-              <p><u>Web Technologies:</u><br>HTML,CSS,Bootstrap<br><u>Development:</u><br>Java,JavaScript,Node.js<br><u>SaaS tools / APIs:</u><br>SalesforceIQ,HubSpot,Stripe<br><u>Others:</u><br>SQL,postgreSQL<br>ᶘ ᵒᴥᵒᶅ
-              </p>
-
-            </div>
-          </div>
-        </div>
-        </div>
+        
 
        
   		</div>
@@ -275,7 +243,7 @@
 
       <script type="text/javascript">
 
-      var arrayString=["Was it really that hard to follow instructions?", "Now refresh the page and start all over...", "Dont mess up again😠"];
+        var arrayString=["Was it really that hard to follow instructions?", "Now refresh the page and start all over...", "Dont mess up again😠"];
 
         document.getElementById("troll").onclick=function() {
 
