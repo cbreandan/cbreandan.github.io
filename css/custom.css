@@ -233,7 +233,27 @@ footer img {
 .font20{
 	font-size:20px;
 }
+.text {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
 
+video#bgvid {
+	position:relative;
+	height:100%;
+	width:75%;
+	z-index:0;
+}
+
+.circular {
+	width: 250px;
+	height: 250px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
 
 
 
