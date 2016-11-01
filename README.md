@@ -5,5 +5,3 @@ HTML
 CSS
 Bootstrap
 Javascript
-
--Summer 2015
