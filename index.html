@@ -40,26 +40,12 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="sss/sss.min.js"></script>
-    <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
-
-    <script>
-
-    jQuery(function($) { $('.slider').sss({ slideShow : false }); });
-
-    </script>
 
   </head>
 
   <body data-spy="scroll" data-target=".navbar-collapse">
-    <div id="trollpart">
+    <div>
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
@@ -81,8 +67,6 @@
         </div>
       </nav>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-
       <div id="jumbotron" class="jumbotron">
 
         <div class="container" id="headerfont">
@@ -91,47 +75,39 @@
 
         </div>
 
-        <div class="container" id="subscribe">
+      </div>
 
-          	<h2 style="margin-top: 420px;"></h2>
-
-            <p style="padding: 30px;"><button id="troll" class="animated infinite pulse">Just go on...do not click! &raquo;</button></p>
+      <!--
+    	<div id="timelapse" style="padding: 0px; margin:0px">
+        <div>
+      		<iframe id="player" style="width:100%; height:700px; padding:0px" src="https://www.youtube.com/embed/qVaisvKbBQw?vq=hd1440&rel=0&autoplay=0&controls=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
+    	</div>
+      -->
 
-  <!--End mc_embed_signup-->
-      </div>
-    </div>
-    <!--
-  	<div id="timelapse" style="padding: 0px; margin:0px">
-      <div>
-    		<iframe id="player" style="width:100%; height:700px; padding:0px" src="https://www.youtube.com/embed/qVaisvKbBQw?vq=hd1440&rel=0&autoplay=0&controls=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-      </div>
-  	</div>
-    -->
+      <div id="aboutme" style="font-size:16px">
+        <div class="container">
+          <div class="row">
+              <img style="float:right" class="circular" src="images/face.jpg"/>
+              <p style="font-size:21px; color:grey">Hi there,</p>
+              <p>My name is Breandan and I'm a 3A CS student at the University of Waterloo. <br>I enjoy all kinds of sports, both outdoors and indoors. </p>
 
-    <div id="aboutme" style="font-size:16px">
-      <div class="container">
-        <div class="row">
-            <img style="float:right" class="circular" src="images/face.jpg"/>
-            <p style="font-size:21px; color:grey">Hi there,</p>
-            <p>My name is Breandan and I'm a 2B CS student at University of Waterloo. <br>I enjoy all kinds of sports, both outdoors and indoors. </p>
+              <p style="font-size:21px; color:grey">Interests?</p>
+              <p>I'm a developer and a musician. I consider myself as a lifetime student and am continuouly learning new things in my spare time. ʕ•ᴥ•ʔ</p> 
 
-            <p style="font-size:21px; color:grey">Interests?</p>
-            <p>I'm a developer and a musician. I consider myself as a lifetime student and am continuouly learning new things in my spare time. I like working with smart people and innovative ideas excites me. ʕ•ᴥ•ʔ</p> 
+              <p style="font-size:21px; color:grey; margin-bottom:0px">Hobbies?</p>
+              <i class="fa fa-code fa-stack fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-music fa-stack fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-plane fa-stack fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-gamepad fa-stack fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-film fa-stack fa-2x" aria-hidden="true"></i>
 
-            <p style="font-size:21px; color:grey; margin-bottom:0px">Hobbies?</p>
-            <i class="fa fa-code fa-stack fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-music fa-stack fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-plane fa-stack fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-gamepad fa-stack fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-film fa-stack fa-2x" aria-hidden="true"></i>
-
-            <p style="font-size:21px; color:grey">Skills?</p>
-            <p><u>Web Technologies:</u><br>HTML, CSS, ReactJS, Bootstrap<br><br><u>Languages / Development:</u><br>C++, C, JavaScript, Git, Bash Scripting<br><br><u>SaaS tools / APIs:</u><br>SalesforceIQ, Stripe, Segment<br><br><u>Others:</u><br>MongoDB, Excel<br>
-            </p>
+              <p style="font-size:21px; color:grey">Skills?</p>
+              <p><u>Web Technologies:</u><br>HTML, CSS, React, Angular, Bootstrap<br><br><u>Languages / Development:</u><br>C++, C, JavaScript, Git, Bash Scripting<br><br><u>SaaS tools / APIs:</u><br>SalesforceIQ, Stripe, Segment<br><br><u>Others:</u><br>MongoDB, Excel<br>
+              </p>
+          </div>
         </div>
       </div>
-    </div>
 
       <div id="who">
         <div class="container homepage">
@@ -152,7 +128,7 @@
             <div class="col-md-5">
               <img src="images/github-logo.png">
             </div>
-  
+
             <!--third feat -->
             <hr>
             <div class="col-md-7 col-md-push-5">
@@ -168,60 +144,35 @@
         </div>
       </div>
 
-  		</div>
-  		</div>
-
-      <!-- I got these buttons from simplesharebuttons.com -->
       <div id="share-buttons" style="padding-top:50px;">
-       
-      <!-- Facebook -->
-       <a href="https://www.facebook.com/breandan.choi" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-      </a>
-       
-      <!-- Email -->
-      <a href="mailto:cbreandan@gmail.com?">
-        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
-      </a>
-       
-      <!-- LinkedIn -->
-      <a href="https://ca.linkedin.com/in/cbreandan" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
-      </a>
-
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/breandan.choi" target="_blank">
+          <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+        </a>
+         
+        <!-- Email -->
+        <a href="mailto:cbreandan@gmail.com?">
+          <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+        </a>
+         
+        <!-- LinkedIn -->
+        <a href="https://ca.linkedin.com/in/cbreandan" target="_blank">
+          <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+        </a>
       </div>
 
       <!--footer-->
       <footer>
           <img src="images/footer.jpg" />
           <div style="height: 80px;color: blue;background-color: #61cbf3;">
-            <p style="text-align:center;font-size: 15px;color:#777">Last Updated: Apr 2017</p>
+            <p style="text-align:center;font-size: 15px;color:#777">Last Updated: July 2017</p>
           </div>
       </footer>
-  </div>
+    </div>
 
-      <script type="text/javascript">
-
-        var arrayString=["Was it really that hard to follow instructions?", "Now refresh the page and start all over...", "Dont mess up again😠"];
-
-        document.getElementById("troll").onclick=function() {
-
-          document.getElementById("trollpart").innerHTML="GREAT! LOOK AT WHAT YOU'VE DONE! 😠";
-
-          for (var i=0; i<arrayString.length; i++) {
-            alert(arrayString[i]);
-          }
-
-
-        }
-
-      </script>
-
-      <div id="back-to-top">
-
-          <a href="#jumbotron"><i class="fa fa-3x fa-chevron-circle-up"></i></a>
-
-      </div>
+    <div id="back-to-top">
+        <a href="#jumbotron"><i class="fa fa-3x fa-chevron-circle-up"></i></a>
+    </div>
 
   </body>
 
